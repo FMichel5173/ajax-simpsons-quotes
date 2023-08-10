@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Retrieval of a quote
   function getQuote() {
     axios
-      .get("https://simpsons-quotes-api.herokuapp.com/quotes")
+      .get("https://thesimpsonsquoteapi.glitch.me/quotes")
       .then(function (response) {
         const quote = response.data[0];
         displayQuote(quote);
